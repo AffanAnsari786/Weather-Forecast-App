@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class='header'>
+        <h1></h1>
+        <nav class='navigation'>
+            <a href='#'>Home</a>
+            <a href='#'>Career</a>
+            <a href='#' >About</a>
+            <a href='#' >Contact us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name..." spellcheck="false">
+            <button>Search</button>
+        </div>
+        <div class="details">
+            <div class="weather-icon">
+                <img src="weather-images/clouds.png" id="weathermood">
+            </div>
+            <div class="place-time">
+                <div id="degree">34.5&deg;</div>
+                <div id="place">MUMBAI, IN</div>
+                <div id="time">5/31/2023<br>12:29:13 PM</div>
+            </div>
+            <div class="extra-info">
+                <div class='two-sided-section'>
+                    <p>
+                        <i class='wi wi-sunset'></i>
+                    </p>
+                    <p id="sunset">
+                        6 AM<br/> Sunrise
+                    </p>
+                </div>
+                <div class='two-sided-section'>
+                    <p>
+                        <i class='wi wi-humidity'></i>
+                    </p>
+                    <p id="humidity">
+                        23<br/> Humidity
+                    </p>
+                </div>
+                <div class='two-sided-section'>
+                    <p>
+                        <i class='wi wi-rain'></i>
+                    </p>
+                    <p id="pressure">
+                        1000<br/> Pressure
+                    </p>
+                </div>
+                <div class='two-sided-section'>
+                    <p>
+                        <i class='wi wi-strong-wind'></i>
+                    </p>
+                    <p id="speed">
+                        3.12<br/> Speed
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tablular-view">
+        <table>
+            <tr>
+                <th></th>
+                <th id="day1">Sunday</th>
+                <th id="day2">Monday</th>
+                <th id="day3">Tuesday</th>
+                <th id="day4">Wednesday</th>
+                <th id="day5">Thursday</th>
+                <th id="day6">Friday</th>
+                <th id="day7">Saturday</th>
+            </tr>
+            <tr>
+                <th>Weather Condition</th>
+                <td id="weather-sun">Clouds</td>
+                <td id="weather-mon">Sunny</td>
+                <td id="weather-tue">Sunny</td>
+                <td id="weather-wed">Sunny</td>
+                <td id="weather-thu">Clear</td>
+                <td id="weather-fri">Clear</td>
+                <td id="weather-sat">Rain</td>
+            </tr>
+            <tr>
+                <th>Temperature</th>
+                <td id="temp-sun">35&deg;C</td>
+                <td id="temp-mon">36&deg;C</td>
+                <td id="temp-tue">37&deg;C</td>
+                <td id="temp-wed">36&deg;C</td>
+                <td id="temp-thu">32&deg;C</td>
+                <td id="temp-fri">33&deg;C</td>
+                <td id="temp-sat">31&deg;C</td>
+            </tr>
+            <tr>
+                <th>Humidity</th>
+                <td id="humi-sun">59</td>
+                <td id="humi-mon">59</td>
+                <td id="humi-tue">56</td>
+                <td id="humi-wed">60</td>
+                <td id="humi-thu">54</td>
+                <td id="humi-fri">53</td>
+                <td id="humi-sat">50</td>
+            </tr>
+            <tr>
+                <th>Pressure</th>
+                <td id="pres-sun">1000</td>
+                <td id="pres-mon">1002</td>
+                <td id="pres-tue">1009.5</td>
+                <td id="pres-wed">1002</td>
+                <td id="pres-thu">1006</td>
+                <td id="pres-fri">1000</td>
+                <td id="pres-sat">1010</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
